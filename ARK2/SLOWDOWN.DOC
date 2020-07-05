@@ -1,0 +1,140 @@
+
+
+
+
+
+                                   MOINVITE.COM
+         
+         
+         
+         
+         
+         OBJET:
+         
+               Ce programme permet de ralentir un micro-ordinateur trop
+         rapide(!) pour utiliser confortablement les programmes pr‚vus
+         pour tourner sur un PC plus lent. Il sera particuliŠrement
+         appr‚ci‚ des amateurs de jeux, utilisateurs d'AT.
+         
+         MOINVITE r‚side en m‚moire et effectue une petite boucle …
+         chaque fois qu'il intercepte l'interruption 8 du "TIMER", ce
+         qui se produit toute les 55 millisecondes. La dur‚e de la
+         boucle, et partant la valeur du ralentissement, est fonction
+         d'un paramŠtre num‚rique donn‚ avec la commande.
+         
+         SYNTAXE:     MOINVITE [ParamŠtre num‚rique]
+         
+         
+             Exemple: MOINVITE 20000  ram‚nera la vitesse d'un AT
+         tournant … 8-MGz … peu prŠs au niveau de celle d'un PC de 4,77
+         MGz.
+         
+         Le paramŠtre … utiliser varie en fonction de la diff‚rence
+         entre vitesse initiale et vitesse d‚sir‚e. On peut la
+         rechercher par tatonnements car chaque commande MOINVITE xxxx
+         se cumule avec les pr‚c‚dentes. Par exemple:
+         
+         MOINVITE 10000
+         MOINVITE 10000
+         MOINVITE  5000
+         
+         Produit le mˆme effet que MOINVITE 25000.
+         
+         Quelques paramŠtres test‚s:
+         -MOINVITE 15000 nous a permis de ralentir suffisament un
+         Olivetti M24 pour atteindre le 3Šme niveau de "BUCK ROGERS", le
+         difficile jeu d'arcade de notre disquette 113, ce qui n'est pas
+         une mince performances!
+         -MOINVITE 36300 ramŠne un AT-3 de 8MHz … une vitesse voisine du
+         z‚ro absolu: La machine consacre toute sa puissance … se
+         ralentir elle-mˆme et il ne lui reste plus une milli-seconde …
+         affecter au programme en cours... Si l'on augmente encore le
+         paramŠtre, l'AT reprend progressivement de la vitesse mais son
+         comportement devient saccad‚ et curieusement rythmique.
+         
+         MOINVITE est totalement inoffensif. Il n'est malheureusement
+         pas utilisable avec les programmes prot‚g‚s qui d‚marrent …
+         partir de leur propre disquette et non du DOS. De mˆme il ne
+         pourra pas fonctionner correctement avec les programmes qui
+         intercepteraient pour leur propre compte l'interruption 8.
+         
+         
+         * Le code-source de MOINVITE a ‚t‚ publi‚ dans le num‚ro de
+         d‚cembre 1986 de PC MAGAZINE (US) sous le nom de SLOWDOWN.
+
+
+
+
+
+
+
+
+
+
+
+
+         Auteur: Charles PETZOLD
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
