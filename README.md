@@ -17,8 +17,8 @@ The launcher could start these games:
 
 
 I found some screenshots for much nostalgia:
-- [80s/README.md](1980 Games)
-- [90s/README.md](1990 Games)
+- [1980 Games](80s/README.md)
+- [1990 Games](90s/README.md)
 
 
 FAQ
